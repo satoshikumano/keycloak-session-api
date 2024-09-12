@@ -16,7 +16,6 @@ public class HelloResourceProvider implements RealmResourceProvider {
     private static final Logger logger = Logger.getLogger(HelloResourceProvider.class);
 
     public HelloResourceProvider(KeycloakSession session) {
-        logger.error("hugahuga");
         this.session = session;
     }
 
@@ -28,11 +27,7 @@ public class HelloResourceProvider implements RealmResourceProvider {
     @GET
     @Produces("text/plain; charset=utf-8")
     public String get() {
-        logger.error("hogehogehogehoge");
-        String name = session.getContext().getRealm().getDisplayName();
-        if (name == null) {
-            name = session.getContext().getRealm().getName();
-        }
+        String name = session.getContext().getRealm().getName();
         return "Hello " + name;
     }
 
