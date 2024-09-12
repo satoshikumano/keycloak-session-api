@@ -5,11 +5,9 @@ import org.keycloak.services.resource.RealmResourceProvider;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Produces;
-import jakarta.ws.rs.ext.Provider;
 
 import org.jboss.logging.Logger;
 
-@Provider
 public class HelloResourceProvider implements RealmResourceProvider {
 
     private KeycloakSession session;

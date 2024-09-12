@@ -19,7 +19,6 @@ public class HelloResourceProviderFactory implements RealmResourceProviderFactor
 
     @Override
     public RealmResourceProvider create(KeycloakSession session) {
-        logger.error("RealmResourceProvider create");
         return new HelloResourceProvider(session);
     }
 
