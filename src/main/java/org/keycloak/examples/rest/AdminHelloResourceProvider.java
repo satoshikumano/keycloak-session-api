@@ -21,6 +21,7 @@ public class AdminHelloResourceProvider implements AdminRealmResourceProvider {
 
     private KeycloakSession session;
     private static final Logger logger = Logger.getLogger(AdminHelloResourceProvider.class);
+    private static final String CLIENT_ID_PREFIX = "test-saml";
 
     public AdminHelloResourceProvider(KeycloakSession session) {
         this.session = session;
@@ -43,7 +44,7 @@ public class AdminHelloResourceProvider implements AdminRealmResourceProvider {
     @Path("sessions/{user_name}")
     public void createSession(@PathParam("user_name") String user_name) {
         RealmModel realm = session.getContext().getRealm();
-        ClientModel client = realm.getClientsStream().filter(c -> c.getClientId().startsWith("test-saml")).findFirst().get();
+        ClientModel client = realm.getClientsStream().filter(c -> c.getClientId().startsWith(CLIENT_ID_PREFIX)).findFirst().get();
         UserModel user =session.users().getUserByUsername(realm, user_name);
         UserSessionModel userSession = session.sessions().createUserSession(null, realm, user, user.getUsername(), null, "back channel", false, null, null, null);
         
