@@ -12,3 +12,8 @@ curl -X GET "http://localhost:8080/admin/realms/master/hello-admin" \
 echo ""
 echo "----- Public Endpoint -----"
 curl -X GET "http://localhost:8080/realms/master/hello"
+
+echo ""
+echo "----- Session Endpoint -----"
+curl -X POST "http://localhost:8080/admin/realms/master/hello-admin/sessions/admin" \
+  -H "Authorization: Bearer ${access_token}"
