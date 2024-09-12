@@ -2,13 +2,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-    <name>REST Example</name>
-    <groupId>org.keycloak.example.rest</groupId>
+    <name>Keycloak REST Example</name>
+    <groupId>com.example.keycloak.rest</groupId>
     <version>1.0.0</version>
     <description />
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>keycloak-examples-providers-rest</artifactId>
+    <artifactId>keycloak-examples-rest</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -55,7 +55,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <build>
-        <finalName>hello-rest-example</finalName>
+        <finalName>keycloak-rest-example</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

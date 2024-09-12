@@ -1,1 +1,1 @@
-org.keycloak.examples.rest.HelloResourceProviderFactory
+com.example.keycloak.rest.HelloResourceProviderFactory
