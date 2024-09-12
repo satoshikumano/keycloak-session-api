@@ -1,4 +1,4 @@
-package org.keycloak.examples.rest;
+package com.example.keycloak.rest;
 
 import org.jboss.logging.Logger;
 import org.keycloak.Config.Scope;

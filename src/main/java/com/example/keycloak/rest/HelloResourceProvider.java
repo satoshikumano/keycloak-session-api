@@ -1,4 +1,4 @@
-package org.keycloak.examples.rest;
+package com.example.keycloak.rest;
 
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.services.resource.RealmResourceProvider;
