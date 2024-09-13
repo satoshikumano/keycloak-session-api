@@ -7,10 +7,10 @@ import org.keycloak.models.KeycloakSessionFactory;
 import org.keycloak.services.resources.admin.ext.AdminRealmResourceProvider;
 import org.keycloak.services.resources.admin.ext.AdminRealmResourceProviderFactory;
 
-public class AdminHelloResourceProviderFactory implements AdminRealmResourceProviderFactory {
+public class AdminSessionResourceProviderFactory implements AdminRealmResourceProviderFactory {
 
-    public static final String ID = "hello-admin";
-    private static final Logger logger = Logger.getLogger(AdminHelloResourceProviderFactory.class);
+    public static final String ID = "sessions";
+    private static final Logger logger = Logger.getLogger(AdminSessionResourceProviderFactory.class);
 
     @Override
     public String getId() {
