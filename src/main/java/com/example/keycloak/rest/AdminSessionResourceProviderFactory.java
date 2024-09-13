@@ -9,7 +9,7 @@ import org.keycloak.services.resources.admin.ext.AdminRealmResourceProviderFacto
 
 public class AdminSessionResourceProviderFactory implements AdminRealmResourceProviderFactory {
 
-    public static final String ID = "hello-admin";
+    public static final String ID = "sessions";
     private static final Logger logger = Logger.getLogger(AdminSessionResourceProviderFactory.class);
 
     @Override
